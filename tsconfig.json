@@ -18,11 +18,12 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "ts.node": {
+  "ts-node": {
+    "esm": true,
     "compilerOptions": {
-      "module": "commonjs",
+      "module": "esnext",
+      "moduleResolution": "node"
     }
-
   },
   "exclude": ["node_modules"]
 }
